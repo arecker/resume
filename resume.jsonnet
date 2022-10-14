@@ -111,7 +111,7 @@ local transformSkills(mp) =
       name='Zendesk',
       location='Madison, WI',
       role='Staff Software Engineer',
-      start='2016-09',
+      start='September 2016',
       end='present',
       achievements=[
 	Achievement('Led a project to rewrite our foundation infrastructure tooling while moving four of our application partitions in Amazon Web Services.  Worked with teams to convert their virtual machines into autoscaling groups  managed by CloudFormation.'),
@@ -127,8 +127,8 @@ local transformSkills(mp) =
       name='Healthgrades',
       location='Middleton, WI',
       role='Software Engineer',
-      start='2015-04',
-      end='2016-09',
+      start='April 2015',
+      end='September 2016',
       achievements=[
 	Achievement('Led a project to port over 500 ColdFusion routines to Django/SQLAlchemy without breaking REST API compatibility.'),
 	Achievement('Used an in-house postgresql reporting framework to write custom reports to help medical provider assistants visualize patient data.'),
@@ -139,8 +139,8 @@ local transformSkills(mp) =
       name='Practice Velocity',
       location='Rockford, IL',
       role='Software Engineer',
-      start='2013-06',
-      end='2015-04',
+      start='June 2013',
+      end='April 2015',
       achievements=[
 	Achievement('Helped the company migrate all version control from SVN to Git.  Collaborated on replacement workflows for tooling, conducted developer workshops, and wrote tooling to convert git history into release notes for stakeholders.'),
 	Achievement('Wrote and disemminated a standard for JavaScript best practices at the company.  Used testing, refactoring, and continuous development to improve feature velocity in our legacy web application.'),
