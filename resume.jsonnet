@@ -28,6 +28,12 @@ local Achievement(description) = (
   description
 );
 
+local capitalizeWord(str) =
+  std.asciiUpper(str[0]) + str[1:];
+
+local transformSkills(mp) =
+  std.map(function(x) { topic: capitalizeWord(x), items: std.join(', ', mp[x]) }, std.objectFields(mp));
+
 {
   info: {
     name: 'Alex Recker',
@@ -37,7 +43,7 @@ local Achievement(description) = (
     website: 'www.alexrecker.com',
     github: 'arecker',
   },
-  skills: {
+  skills: transformSkills({
     programming: [
       'python',
       'ruby',
@@ -87,7 +93,7 @@ local Achievement(description) = (
       'code screens',
       'pair programming',
     ],
-  },
+  }),
   schools: [
     School(
       name='Wheaton College',
@@ -106,6 +112,7 @@ local Achievement(description) = (
       location='Madison, WI',
       role='Staff Software Engineer',
       start='2016-09',
+      end='present',
       achievements=[
 	Achievement('Led a project to rewrite our foundation infrastructure tooling while moving four of our application partitions in Amazon Web Services.  Worked with teams to convert their virtual machines into autoscaling groups  managed by CloudFormation.'),
 	Achievement('Conducted technical interviews and code screens for teams across engineering.  Gave workshops showing engineers how to evaluate candidates fairly.  Presented at company conference on how to perform effectively in code screens.'),

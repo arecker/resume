@@ -9,7 +9,7 @@ to get them?  That's the fun part, it's like a scavenger hunt.
 
 - `make`
 - `jsonnet`
-- `python`
+- `pandoc`
 - `wkhtmltopdf`
 
 ## Usage
