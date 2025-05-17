@@ -6,125 +6,125 @@
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <style>
       body {
-	  font-family: Helvetica, sans-serif;
-	  line-height: 1.2;
-	  -webkit-font-smoothing: antialiased;
-	  -moz-osx-font-smoothing: grayscale;
+          font-family: Helvetica, sans-serif;
+          line-height: 1.2;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
       }
 
       header, footer {
-	  text-align: center;
+          text-align: center;
       }
 
       header img {
-	  border-radius: 50%;
+          border-radius: 50%;
       }
 
       h1, h2, h3, h4 {
-	  margin-bottom: 0;
+          margin-bottom: 0;
       }
 
       h1, h2 {
-	  font-size: 20px;
+          font-size: 20px;
       }
 
       h1 {
-	  margin-top: 5px;
+          margin-top: 4px;
       }
 
       h2 {
-	  color: #807d77;
+          color: #807d77;
       }
 
       h3 {
-	  margin-top: 5px;
-	  font-size: 16px;
+          margin-top: 4px;
+          font-size: 16px;
       }
 
       h3 small {
-	  font-size: 16px;
-	  color: #5e5c58;
-	  padding-left: 10px;
+          font-size: 16px;
+          color: #5e5c58;
+          padding-left: 10px;
       }
 
       hr {
-	  margin-top: 5px;
+          margin-top: 4px;
       }
 
       a {
-	  color: black;
+          color: black;
       }
 
       p {
-	  margin-top: 0;
-	  margin-bottom: 0;
+          margin-top: 0;
+          margin-bottom: 0;
       }
 
       ul {
-	  padding-left: 18px;
-	  margin-top: 5px;
+          padding-left: 18px;
+          margin-top: 4px;
       }
 
       footer {
-	  margin-top: 5px;
-	  font-style: italic;
-	  color: #5e5c58;
+          margin-top: 2px;
+          font-style: italic;
+          color: #5e5c58;
       }
     </style>
   </head>
   <body>
     <article>
       <header class="grid-container">
-	<img src="./avatar.jpg" alt="avatar"/>
-	<h1>$info.name$</h1>
-	<address>
-	  <span>$info.location$</span>
-	  <br/>
-	  <span>$info.phone$</span>
-	</address>
-	<address>
-	  <a href="mailto:$info.email$">$info.email$</a>
-	  <br/>
-	  <span><a href="https://www.github.com/$info.github$">github.com/$info.github$</a></span>
-	</address>
+        <img src="./avatar.jpg" alt="avatar"/>
+        <h1>$info.name$</h1>
+        <address>
+          <span>$info.location$</span>
+          <br/>
+          <span>$info.phone$</span>
+        </address>
+        <address>
+          <a href="mailto:$info.email$">$info.email$</a>
+          <br/>
+          <span><a href="https://www.github.com/$info.github$">github.com/$info.github$</a></span>
+        </address>
       </header>
       <section>
-	<h2>Experience</h2>
-	<hr/>
-	$for(workplaces)$
-	<h3>$it.name$<small>$it.role$ - $it.location$</small></h3>
-	<small>$it.start$ - $it.end$</small>
-	<ul>
-	  $for(it.achievements)$
-	  <li>$it$</li>
-	  $endfor$
-	</ul>
-	$endfor$
+        <h2>Experience</h2>
+        <hr/>
+        $for(workplaces)$
+        <h3>$it.name$<small>$it.role$ - $it.location$</small></h3>
+        <small>$it.start$ - $it.end$</small>
+        <ul>
+          $for(it.achievements)$
+          <li>$it$</li>
+          $endfor$
+        </ul>
+        $endfor$
       </section>
       <section>
-	<h2>Education</h2>
-	<hr/>
-	$for(schools)$
-	<h3>$it.name$<small>$it.location$</small></h3>
-	<small>$it.duration$</small>
-	<ul>
-	  $for(it.achievements)$
-	  <li>$it$</li>
-	  $endfor$
-	</ul>
-	$endfor$
+        <h2>Education</h2>
+        <hr/>
+        $for(schools)$
+        <h3>$it.name$<small>$it.location$</small></h3>
+        <small>$it.duration$</small>
+        <ul>
+          $for(it.achievements)$
+          <li>$it$</li>
+          $endfor$
+        </ul>
+        $endfor$
       </section>
       <section>
-	<h2>Skills</h2>
-	<hr/>
-	<ul>
-	  $for(skills)$
-	  <li><strong>$it.topic$:</strong> $it.items$</li>
-	  $endfor$
-	</ul>
+        <h2>Skills</h2>
+        <hr/>
+        <ul>
+          $for(skills)$
+          <li><strong>$it.topic$:</strong> $it.items$</li>
+          $endfor$
+        </ul>
       </section>
       <footer>
-	<p>References available upon request.  Thank you for your consideration!</p>
+        <p>References available upon request.  Thank you for your consideration!</p>
       </footer>
     </article>
   </body>
